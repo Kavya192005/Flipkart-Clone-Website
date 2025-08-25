@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images In HTML</title>
+</head>
+<body>
+    <h1>Image Tag :</h1>
+    <br>
+
+    <!-- The <img> HTML element is used to embed an image in a document. 
+    It contains a src attribute, which holds the image URL, and an alt attribute, 
+    which provides alternative text for the image if it cannot be displayed. -->
+
+
+     <img 
+     src="./assets/Image1.jpg" 
+     alt="this is text which is visiable when image is not load"
+     width="1000px"
+     height="auto"
+     loading="lazy">
+
+    <!-- 
+
+    Void Elements / Empty Elements
+
+    -> not all parts of web page use the causal pattern of having an opening tag,
+    some content and then a closing tag. Some parts only need a single tag to work.
+    These  are called "Void elements" or "Empty elements"
+    
+    -->
+
+    <!-- source set -->
+
+    <!-- <img 
+    src="./assets/Image1.jpg" 
+    alt="responsive image" 
+    
+    srcset="
+    ./assets/Image1.webp 400w,
+    ./assets/Image1.png 600w,
+    "
+
+    width="400"> -->
+
+    <!-- Picture tag -->
+
+    <!-- The <picture> HTML elements contains zero or more 
+        <Source> elements and one <img>
+        element to offer alternative versions of an image  
+        for different display/devices scenarios
+     -->
+
+     <!-- <picture>
+        <source srcset="./assets/Image1.png" type="image/png">
+        <source srcset="./assets/Image1.webp" type="image/webp ">
+        <img src="./assets/Imasge1.jpg" alt="home image" width="400">
+     </picture> -->
+
+    <!-- Figure Tag -->
+
+    <!-- The <figure> HTML element represents self-contained content, potentailly with an
+        optional caption, which is specified using the <figcaption> element 
+    -->
+            <!-- <figure>
+                <img src="./assets/Image1.png" alt="this alternative text" width="400">
+                <figcaption>This is person image</figcaption>
+            </figure>
+         -->
+    <!-- *------------------------------------- -->
+    <!--*  IMPORTANT NOTE ON HTML FIGURE TAG  
+    <!-- *---------------------------------------- -->
+    <!--
+    ? 1: The figure element is particularly useful for images,
+     illustrations, diagrams, videos, audio clips, and other types of media. 
+
+    ? 2: Use the alt attribute for images within the figure element to provide alternative text for accessibility. 
+
+    ? 3: The figure element helps improve accessibility
+     and search engine optimization by indicating the 
+     content and its context. 
+
+    -->
+
+    
+    <!-- <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+    </figure> -->
+
+
+
+
+    <!-- *------------------------------------- -->
+    <!--* INTERVIEW QUESTIONS: HTML IMAGE TAG  
+    <!-- *---------------------------------------- -->
+
+    <!--? 1: How would you make an image responsive using 
+    the width attribute? -->
+    <!-- You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space. -->
+
+    <!--? 2: How do you create an image link using the <img> tag? -->
+    <!-- You wrap the <img> tag with an anchor <a> tag and provide the href attribute in the <a> tag. -->
+
+    <!--? 3: What's the difference between relative and absolute URLs 
+    in the href attribute? -->
+    <!-- Relative URLs are URLs that are relative 
+     to the current page's URL. Absolute
+    URLs are complete URLs, including the protocol (http/https) and domain. -->
+
+    <!--? 4: Why is providing descriptive alt text for images important? It improves -->
+    <!-- accessibility for users with visual impairments and helps search engines 
+    understand image content.
+
+        
+    
+</body>
+</html>

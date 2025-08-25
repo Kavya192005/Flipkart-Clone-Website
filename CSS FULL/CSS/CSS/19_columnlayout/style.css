@@ -1,0 +1,42 @@
+/** ------------------------------------- -->
+/**  COLUMN LAYOUT IN CSS  
+/** ---------------------------------------- -->
+
+/* The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers */
+/* 
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
+}
+
+.hero-section {
+  margin-top: 100px;
+  width: 60%;
+}
+
+
+p {
+  column-count: 2;
+  column-rule: 4px solid red;
+  /* column-rule-color: red;
+  column-rule-style: dotted;
+  column-rule-width: 10px; */
+  column-gap: 50px;
+  text-align: justify;
+}
